@@ -1,5 +1,3 @@
-var Collections = require("../Collections/Collections");
-var Collection = require("./Collection");
 var User = require("./User");
 
 var Me = User.extend({
@@ -8,12 +6,7 @@ var Me = User.extend({
 
 	initialize: function(options) {
 
-		this.currentCollection = 209225; // temp
-
 		this.once('change', this.activate);
-
-		this.collections = new Collections(null, {parentModel: this});
-		this.collection = new Collection({id: this.currentCollection, parentModal: this});
 	},
 
 	url: function() {
