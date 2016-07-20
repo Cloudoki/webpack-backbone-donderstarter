@@ -1,4 +1,4 @@
-# backbone-webpack
+# Webpack Backbone Donderstarter
 Webpack with Backbone starter
 
 ## Features
