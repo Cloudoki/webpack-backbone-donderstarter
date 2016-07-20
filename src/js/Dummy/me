@@ -1,0 +1,30 @@
+{
+	"me": {
+		"id": 1,
+		"name": "Nuno Jorge",
+		"firstname": "Nuno",
+		"lastname": "Jorge",
+		"email": "username@domain.com",
+		"phone": "913456789",
+		"vat": "123456789",
+		"address": {
+			"street": "Street Name goes here",
+			"number": "12",
+			"zip": "9000",
+			"city": "Ghent"
+		},
+		"context": {
+			"id": 1,
+			"name": "Deloitte",
+			"whitelabel": {
+				"primarycolor": "#021d5b",
+				"secondarycolor": "#9ad100",
+				"background": {
+					"image": "https://visualhunt.com/photos/xl2/1/architecture-skyscraper-urban-city-office.jpg",
+					"color": "#000000"
+				},
+				"logo": "http://placehold.it/157x30"
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+}
+
+#login {
+	opacity: 1;
+	height: inherit;
+
+	div {
+		opacity: 1;
+		height: inherit;
+	}
+
+	iframe.login {
+		border: 0;
+		opacity: 1;
+		height: inherit;
+		width: 100%;
+	}
+}

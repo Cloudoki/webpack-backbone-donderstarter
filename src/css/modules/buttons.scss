@@ -1,0 +1,68 @@
+.tl-btn {
+
+	border: none;
+	padding: 9px 16px;
+	color: $white;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	font-family: $font-bold;
+
+	&.transparent {
+		background-color: transparent;
+		color: $dark-grey;
+		box-shadow: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+  	&.quotation {
+	  background-color: transparent;
+	  font-family: ProximaNova;
+	  opacity: .8;
+
+	  &:hover {
+		opacity: 1;
+	  }
+	}
+}
+
+.dropdown {
+
+  	margin: -15px 0px 15px -10px;
+
+	.text-drop {
+	  font-size: 13px;
+	  opacity: .7;
+	  padding: 0;
+	}
+
+	button {
+	  border: none;
+	  background-color: transparent;
+	  
+	  span {
+		margin-left: 5px;
+	  }
+	}
+
+  	li {
+	  @extend .text-drop;
+
+	  a {
+		&:hover {
+		  background-color: $green;
+		  color: #fff;
+		}
+	  }
+	}
+
+  	.dropdown-menu {
+	  border-radius: 0;
+	  border: none;
+	}
+}

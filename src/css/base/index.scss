@@ -1,0 +1,109 @@
+@import "../config/variables.scss";
+@import "../config/mobile.scss";
+@import "../modules/cards.scss";
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100%;
+  line-height: 1.5;
+}
+
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $extra-lighter-grey;
+  color: $product-primary;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul {
+	padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease 300ms;
+}
+
+li.active {
+  background-color: $product-secondary;
+
+  a {
+    color: $white;
+  }
+}
+
+li:not(.active):hover {
+  background-color: #000;
+}
+
+#main-content {
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+	.menu {
+		background-color: $product-primary;
+		color: $white;
+		box-shadow: $shadow-md;
+
+    ul {
+      font-size: 0;
+
+      li {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 20px 15px;
+        min-height: 60px;
+
+        a {
+          color: #fff;
+
+          &:link, &:visited, &:hover, &:active {
+            color: #fff;
+            text-decoration: none;          
+          }
+        }
+      }
+    }
+	}
+  
+	.content {
+    padding: 20px;
+    position: absolute;
+    overflow: auto;
+    bottom: 40px;
+    top: 60px;
+    width: 100%;
+	}
+	.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background: #FFF;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    min-height: 40px;
+    box-shadow: $shadow;
+	}
+}
+
+// margins
+.mt-10 {margin-top: 10px;} .mt-20 {margin-top: 20px;} 

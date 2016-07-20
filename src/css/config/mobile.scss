@@ -1,0 +1,22 @@
+$breakpoint-tablet: 768px;
+$breakpoint-md-phone: 480px;
+$breakpoint-sm-phone: 320px;
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .trades .actions {
+
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md-phone) {
+
+}
+
+@media only screen and (max-width: $breakpoint-sm-phone) {
+
+}
