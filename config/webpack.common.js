@@ -60,9 +60,11 @@ module.exports = validate({
     new webpack.ProvidePlugin({
       Backbone : "backbone"
     }),
-    /*new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'login']
-    }),*/
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'commons',
+      filename: 'commons.js',
+      chunks: ['app', 'login']
+    }),
     new HtmlWebpackPlugin({
       template: 'src/templates/index.html',
       chunks: ['app']
